@@ -15,5 +15,15 @@ router.post("/",(req,res)=> {
   return res.json (req.body)
 })
 
+// PUT
+router.put("/",(req,res)=> {
+  return res.json (req.body)
+})
+
+// DELETE
+router.delete("/",(req,res)=> {
+  return res.json (req.body)
+})
+
 
 module.exports = router;

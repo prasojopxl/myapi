@@ -14,18 +14,24 @@ Currently we will using express generator for base template and structure folder
 
 1. Create your project folder: open your terminal and create your empty folder
 
-install express JS with in your project folder:
-`npm install -g express-generator`
-`express --no-view .`
+install express JS in your project folder:
+```
+npm install -g express-generator
+express --no-view .
+```
 
 install your npm package with comment
-`npm i`
+```
+npm i
+```
 
 2. install nodemon, packgae development auto reload nodejs server
-`npm i nodemon -D`
+```
+npm i nodemon -D
+```
+
 
 3. Edit your run script like below:
-
 ```
 //package.json
   "scripts": {
@@ -37,7 +43,6 @@ install your npm package with comment
 So, you can run development mode with terminal `npm run dev`
 
 for the example, below is my code at routes/users.js
-
 ```
 /* GET users listing. */
 router.get('/',(req,res)=> {
@@ -53,4 +58,18 @@ router.post("/",(req,res)=> {
   return res.json (req.body)
 })
 ```
+
+4. we will use mysql database, so in the next step we will use sequelize to connect our mysql, below is step implementation:
+open your command line and type:
+```
+npm i sequelize sequelize-cli
+```
+
+5. Confirm sequlize already on your project, open your terminal and type
+```
+npx sequelize
+```
+
+6. 
+
 
