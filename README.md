@@ -26,20 +26,19 @@ install your npm package with comment
 
 3. Edit your run script like below:
 
-------
+<blockquote>
 //package.json
-`  "scripts": {
+  "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
-`
-------
+</blockquote>
 
 So, you can run development mode with terminal `npm run dev`
 
 for the example, below is my code at routes/users.js
 
--------
+<blockquote>
 /* GET users listing. */
 router.get('/',(req,res)=> {
   return res.json({
@@ -53,6 +52,5 @@ router.get('/',(req,res)=> {
 router.post("/",(req,res)=> {
   return res.json (req.body)
 })
-
-------
+</blockquote>
 
