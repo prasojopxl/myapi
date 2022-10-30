@@ -18,5 +18,41 @@ install express JS with in your project folder:
 `npm install -g express-generator`
 `express --no-view .`
 
-2. 
+install your npm package with comment
+`npm i`
+
+2. install nodemon, packgae development auto reload nodejs server
+`npm i nodemon -D`
+
+3. Edit your run script like below:
+
+------
+//package.json
+`  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+`
+------
+
+So, you can run development mode with terminal `npm run dev`
+
+for the example, below is my code at routes/users.js
+
+-------
+/* GET users listing. */
+router.get('/',(req,res)=> {
+  return res.json({
+    id:1,
+    name:'Sapto Prasojo',
+    role:'admin'
+  })
+})
+
+// POST
+router.post("/",(req,res)=> {
+  return res.json (req.body)
+})
+
+------
 
