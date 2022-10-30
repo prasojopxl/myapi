@@ -70,6 +70,27 @@ npm i sequelize sequelize-cli
 npx sequelize
 ```
 
-6. 
+6. Create structure folder database setup with command line
+```
+npx sequelize init
+```
+
+7. Create your mysql database, and setup config base on ypur setting mysql,open your project folder
+
+```
+// setup base on your mysql
+//config/config.json
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "myapi",
+    "host": "127.0.0.1",
+    "port":8889,
+    "dialect": "mysql"
+  },
+```
+
+
+
 
 
